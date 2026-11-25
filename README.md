@@ -157,37 +157,6 @@ Ouvrir ensuite l'application dans le navigateur :
 http://127.0.0.1:8000
 ```
 
-## Structure générale du projet
-
-```text
-dsi-gestion-evenements-formations/
-│
-├── app/
-│   ├── Http/
-│   │   ├── Controllers/
-│   │   └── Middleware/
-│   └── Models/
-│
-├── database/
-│   ├── migrations/
-│   └── seeders/
-│
-├── public/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── resources/
-│   └── views/
-│
-├── routes/
-│   └── web.php
-│
-├── .env.example
-├── artisan
-├── composer.json
-└── README.md
-```
 
 ## Contexte du projet
 
