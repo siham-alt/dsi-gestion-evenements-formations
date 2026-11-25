@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Profile UI Card Design | CodingNepal</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #f2f2f2;
+  text-align: center;
+}
+.container{
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card{
+  height: 280px;
+  max-width: 350px;
+  margin: 0 20px;
+  background: white;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.card:hover{
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.card .img{
+  height: 200px;
+  width: 100%;
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .top-text{
+  padding: 5px;
+}
+.card .top-text .name{
+  font-size: 20px;
+  font-weight: 500;
+  color: #202020;
+}
+.card .bottom-text{
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text{
+  text-align: justify;
+}
+@media screen and (max-width: 978px) {
+  .container{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card{
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="card">
+            <div class="img">
+               <img src="/img/card1.jpg">
+            </div>
+            <div class="top-text">
+               <div class="name">
+                  Journée de sensibilisation à la sécurité informatique  
+               </div>
+            </div>
+            <div class="bottom-text">
+               <div class="text">
+                Un événement visant à sensibiliser le personnel de l'organisation aux menaces en ligne, aux bonnes pratiques de sécurité et aux mesures de prévention des cyberattaques               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="img">
+               <img src="/img/card2.jpg">
+            </div>
+            <div class="top-text">
+               <div class="name">
+                  Table ronde sur l'innovation technologique 
+               </div>
+              
+            </div>
+            <div class="bottom-text">
+               <div class="text">
+                Un événement réunissant des leaders du secteur technologique pour discuter des avancées récentes, des opportunités de développement et des meilleures pratiques en matière d'innovation.               </div>
+             
+            </div>
+         </div>
+         <div class="card">
+            <div class="img">
+               <img src="/img/card3.png">
+            </div>
+            <div class="top-text">
+               <div class="name">
+                  Hackathon interne
+               </div>
+            
+            </div>
+            <div class="bottom-text">
+               <div class="text">
+                Une compétition interne où les équipes de la DSI travaillent ensemble pour résoudre des problèmes techniques, développer des prototypes innovants et promouvoir la collaboration.               </div>
+               
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
