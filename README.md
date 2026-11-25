@@ -1,66 +1,69 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Gestion des Événements et des Formations – DSI
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Présentation du projet
 
-## About Laravel
+Cette application web a pour objectif de faciliter la gestion des événements et des formations organisés au sein de la Direction des Systèmes d’Information (DSI) du Ministère de l’Éducation nationale, du Préscolaire, de la Formation professionnelle et de la Qualification du Royaume du Maroc.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Elle permet aux utilisateurs de consulter les événements et les formations proposés, de s'y inscrire et de suivre leurs inscriptions.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Elle offre également un espace d'administration permettant de gérer les événements, les formations, les utilisateurs et les inscriptions.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Objectifs
 
-## Learning Laravel
+- Centraliser la gestion des événements et des formations.
+- Simplifier le processus d'inscription des utilisateurs.
+- Gérer efficacement les capacités d'accueil.
+- Éviter les inscriptions en double.
+- Empêcher les inscriptions aux activités déjà terminées.
+- Faciliter le suivi et l'administration des inscriptions.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Fonctionnalités principales
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Espace utilisateur
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Consulter la liste des événements et des formations.
+- Consulter les détails de chaque activité : description, date, lieu et nombre de places disponibles.
+- S'inscrire à un événement ou à une formation.
+- Consulter ses inscriptions.
+- Bénéficier d'un contrôle automatique de la disponibilité des places.
+- Empêcher une nouvelle inscription à une activité à laquelle l'utilisateur est déjà inscrit.
 
-## Laravel Sponsors
+### Espace administrateur
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Ajouter, modifier et supprimer des événements.
+- Ajouter, modifier et supprimer des formations.
+- Définir les dates, les descriptions, les lieux et les capacités d'accueil.
+- Consulter la liste des participants inscrits.
+- Gérer les inscriptions.
+- Suivre le nombre de places disponibles et le nombre d'inscrits.
 
-### Premium Partners
+## Règles de gestion
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+L'application applique les règles suivantes :
 
-## Contributing
+1. Un utilisateur peut s'inscrire à un événement ou à une formation uniquement si l'activité n'est pas encore passée.
+2. Une inscription est autorisée uniquement lorsqu'il reste des places disponibles.
+3. Un utilisateur ne peut pas s'inscrire plusieurs fois à la même activité.
+4. Le nombre de places disponibles est mis à jour en fonction des inscriptions.
+5. L'administrateur dispose des droits nécessaires pour gérer les activités et les inscriptions.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Technologies utilisées
 
-## Code of Conduct
+Les technologies utilisées dans ce projet :
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **Backend :** À compléter
+- **Frontend :** À compléter
+- **Base de données :** À compléter
 
-## Security Vulnerabilities
+## Installation et lancement
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Les étapes d'installation et de lancement seront ajoutées selon les technologies utilisées dans le projet.
 
-## License
+## Contexte du projet
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Projet réalisé dans le cadre du développement d'une application de gestion destinée à faciliter l'organisation des événements et des formations au sein de la Direction des Systèmes d'Information (DSI).
+
+---
+
+**Projet :** Gestion des Événements et des Formations  
+**Organisme concerné :** Direction des Systèmes d'Information (DSI) – Maroc
